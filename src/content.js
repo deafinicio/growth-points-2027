@@ -22,8 +22,3 @@ export const STAGES = [
   ] },
 ];
 export const QUESTIONS = STAGES.flatMap((stage, stageIndex) => stage.questions.map((question, questionIndex) => ({ ...question, stageIndex, questionIndex })));
-export const LAYOUTS = [
-  { id: 'pyramid', label: 'Піраміда', description: 'Кожен новий рівень спирається на попередній. Від основи — до результату.' },
-  { id: 'orbit', label: 'Орбіти', description: 'Три етапи на спільній орбіті. Обмін досвідом стає енергією зростання.' },
-  { id: 'trajectory', label: 'Траєкторія', description: 'Послідовний рух угору. Кожен місяць — наступна точка зростання.' },
-];
